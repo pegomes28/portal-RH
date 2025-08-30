@@ -1,0 +1,19 @@
+<div class="form-container">
+  <h2>Login</h2>
+
+  <label for="email">Email</label>
+  <input type="email" id="email" [(ngModel)]="email" placeholder="Email">
+
+  <label for="senha">Senha</label>
+  <input type="password" id="senha" [(ngModel)]="senha" placeholder="Senha">
+
+  <button (click)="login()">Entrar</button>
+
+  <!-- Mensagem de erro inline -->
+  <p class="error-message" *ngIf="erro">{{ erro }}</p>
+
+  <!-- Link de registro -->
+  <p class="register-text">
+    Não tem cadastro? <a routerLink="/registro">Registre-se aqui</a>
+  </p>
+</div>

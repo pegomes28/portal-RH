@@ -1,0 +1,54 @@
+{
+  "usuarios": [
+    {
+      "id": 2,
+      "email": "usuario@rh.com",
+      "senha": "usuario123",
+      "isAdmin": false
+    },
+
+    {
+    "id": 2,
+    "email": "socorro@gmail.com",
+    "senha": "saorikido123",
+    "isAdmin": true
+    },
+    {
+    "id": 3,
+    "email": "teste@rh.com",
+    "senha": "teste123",
+    "isAdmin": false
+  }
+],
+
+  "vagas": [
+    {
+      "id": "7dee",
+      "_id": 0,
+      "_nome": "",
+      "_foto": "",
+      "_descricao": "",
+      "_salario": 0
+    }
+  ],
+  "curriculos": [
+    {
+      "id": "d4f1",
+      "_id": 0,
+      "_nome": "",
+      "_idade": 0,
+      "_telefone": "",
+      "_email": "",
+      "_descricao": ""
+    },
+    {
+      "id": "a680",
+      "_id": 0,
+      "_nome": "",
+      "_idade": 0,
+      "_telefone": "",
+      "_email": "",
+      "_descricao": ""
+    }
+  ]
+}

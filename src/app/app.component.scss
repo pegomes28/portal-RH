@@ -1,0 +1,88 @@
+// Variáveis
+$primary: #4f8cff;
+$secondary: #f5f7fa;
+$accent: #ffb347;
+$text: #222;
+$background: #fff;
+$radius: 12px;
+$shadow: 0 4px 16px rgba(0,0,0,0.08);
+
+// Mixins
+@mixin card {
+  background: $background;
+  border-radius: $radius;
+  box-shadow: $shadow;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: $text;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: linear-gradient(135deg, #e3eafc 0%, #4f8cff 60%, #243b55 100%);
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: $background;
+  border-radius: $radius;
+  box-shadow: $shadow;
+  padding: 32px;
+}
+
+h1, h2, h3 {
+  color: $primary;
+  margin-bottom: 16px;
+}
+
+button, .btn {
+  background: $primary;
+  color: #fff;
+  border: none;
+  border-radius: $radius;
+  padding: 12px 28px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(79,140,255,0.08);
+
+  &:hover {
+    background: $accent;
+    color: $text;
+  }
+}
+
+input, select, textarea {
+  border: 1px solid #dbeafe;
+  border-radius: $radius;
+  padding: 10px;
+  margin-bottom: 16px;
+  width: 100%;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background: #f8fafc;
+  transition: border 0.2s;
+
+  &:focus {
+    border-color: $primary;
+    outline: none;
+  }
+}
+
+.card {
+  @include card;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+  transition: color 0.2s;
+
+  &:hover {
+    color: $accent;
+  }
+}

@@ -1,0 +1,18 @@
+<div class="form-container">
+  <div class="form-box">
+    <h2>Bem-Vindo(a)!</h2>
+    <form [formGroup]="form" (ngSubmit)="registro()">
+      <label>Email:</label>
+      <input formControlName="email" placeholder="Digite seu email..." type="email" />
+      <label>Senha:</label>
+      <input formControlName="senha" placeholder="Digite sua senha..." type="password" />
+      <label>Confirmar Senha:</label>
+      <input formControlName="confirmarSenha" placeholder="Digite sua senha..." type="password" />
+      <button type="submit">Registrar</button>
+     <div *ngIf="erro" style="color:#ffb3b3; margin-top:10px;">{{ erro }}</div>
+    </form>
+    <div style="margin-top:1rem; text-align:center;">
+      Já possui cadastro? <a routerLink="/login">Faça Login</a>
+    </div>
+  </div>
+</div>
